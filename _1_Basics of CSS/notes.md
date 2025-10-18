@@ -50,3 +50,4 @@ In style.css file:
 .container {
   width: 80%;
   margin: 0 auto;
+}

@@ -368,3 +368,9 @@ input:enabled{
     color: rgb(244, 4, 20);
     font-size: 55px;
 } */
+
+
+input:disabled{
+    background-color: rgb(194, 188, 188);
+    cursor: not-allowed;
+}
