@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics Tutorial</title>
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Basics Tutorial</h1>
+
+    <div class="section">
+        <h2>1. Inline CSS</h2>
+        <p style="color: red; font-weight: bold;">This paragraph uses inline CSS to make the text red and bold.</p>
+        <p>This is a normal paragraph for comparison.</p>
+    </div>
+
+    <div class="section">
+        <h2>2. Internal CSS</h2>
+        <p>This section uses internal CSS defined in the &lt;style&gt; tag in the head.</p>
+        <p>The background color, font, and layout are controlled by internal styles.</p>
+    </div>
+
+    <div class="section external-demo">
+        <h2>3. External CSS</h2>
+        <p>This section demonstrates external CSS linked from style.css.</p>
+        <p>The styling for this section is defined in the separate CSS file.</p>
+        <div class="highlight-box">
+            <p>This is a highlighted box using external CSS classes.</p>
+        </div>
+    </div>
+
+</body>
+</html>

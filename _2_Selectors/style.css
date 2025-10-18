@@ -1,0 +1,370 @@
+/* Basic Selectors
+
+/* universal selector - * */
+
+/* global */
+/* *{
+    background-color: black;
+    color: white;
+
+} */
+
+/* container  */
+/* header * {
+    background-color: grey;
+    padding: 20px;
+    text-align: center;
+} */
+
+/* Tag based selector */
+/* header{
+    background-color: royalblue;
+    padding: 20px;
+} */
+
+/* class based selector */
+/* .ulclass{
+    background-color: maroon;
+    padding: 20px;
+    color: greenyellow;
+} */
+
+/* Id based selector */
+/* #ol1{
+    background-color: black;
+    color: yellow;
+
+}  */
+
+/* attribute selector */
+/* 1. attr = "value" */
+/* [type = "submit"]{
+    font-size: 25px;
+    background-color : greenyellow
+} */
+
+/* 2. attr ~= "value" */
+/* [href ~= "google"]{
+    font-size: 25px;
+    background-color : greenyellow
+} */
+
+/* 3. attr ^= "value" */
+/* https://google.com */
+/* [href ^= "https"]{
+    background-color: black;
+    color:white;
+    font-size: 45px;
+} */
+
+/* 4. attr $= "value" */
+/* https://www.google.com */
+/* [href $= "com"]{
+    color:maroon;
+    font-size: 25px;
+} */
+
+/* 5. attr *= "value" */
+/* https://www.google1 2.com */
+
+/* [href *= ".com"]{
+    font-size: 75px;
+} */
+
+/* attr |= "value" */
+/* [href |= "https"]{
+    font-size: 75px;
+} */
+
+/* 6. attr */
+/* [href]{
+    font-size:40px;
+} */
+
+
+/* Combinator selectors */
+
+/* 1. Child Selector */
+/* div > h1{
+    color : greenyellow;
+    background-color: black;
+} */
+
+/* 2. Descendant Selector */
+/* div h1{
+    color : black;
+    background-color:lawngreen;
+    font-size: 25px;
+} */
+
+/* 3. Adjacent Sibling Selector */
+/* h1 + p{
+    color : maroon;
+    background-color: lightgrey;
+    font-size: 55px;
+} */
+
+/* 4. General Sibling Selector */
+/* h1 ~ p{
+    color : white;
+    background-color: royalblue;
+} */
+
+/* Groups multiple selectors */
+/* h1, h2, p {
+    background-color: rgb(255, 19, 19);
+    color:white
+} */
+
+/* Logical Combinations (CSS4+) 
+:is()
+:where()
+:has()
+:root()
+*/
+/* 
+div :not(h2){
+    background-color: black;
+    color: white;
+}
+
+:root{
+    --bg : rgb(0, 255, 213);
+    --color : black;
+}
+
+div{
+    background-color : var(--bg);
+    color : var(--color);
+} */
+
+/* Pseudo-elements */
+/* ::before */
+/* h1::before{
+    content: '*';
+} */
+
+
+/* ::after */
+/* h1::after{
+    content: ' *';
+    color: rgb(0,255,213);
+    background-color: black;
+    font-size: 75px;
+} */
+
+
+/* ::first-letter */
+/* h1::first-letter{
+    color : rgb(245, 28, 28);
+    font-size: 75px;
+} */
+
+/* ::first-line */
+/* p::first-line{
+    color : rgb(245, 28, 28);
+    font-size: 25px;
+} */
+
+/* ::selection */
+/* h1::selection{
+    background-color:black;
+    color: rgb(0, 255, 213);
+}
+
+span::selection{
+    background-color: rgb(26, 243, 80);
+    color: rgb(255, 19, 19);
+} */
+
+/* Pseudo-classes */
+/* p:nth-child(4n){
+    background: black;
+    color: yellow;
+    font-size: 20px;
+    text-align: center;
+} */
+
+/* 
+
+### 🔹 **Pseudo-classes**
+
+*/
+
+/* - `:hover` — When mouse hovers */
+/* h2:hover{
+    background-color: rgb(0,255,213);
+    text-align: center;
+}
+
+button:hover{
+    font-size: 25px;
+} */
+
+
+/* - `:active` — When element is active */
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+.box:active{
+    background-color: lawngreen;
+}
+
+/* - `:focus` — When element is focused */
+/* input:focus{
+    border: 2px solid black;
+
+    outline: 2px dotted red;
+} */
+
+/* - `:visited` — Visited links */
+a{
+    font-size: 45px;
+}
+a:visited{
+    color: rgba(255, 0, 0, 0.882);
+}
+
+
+/* 
+
+<section>
+    <h2>Nisha</h2>  -- first
+    <button>Submit</button> 
+    <h1>This is last one </h1> -- last
+</section>
+
+*/
+
+/* - `:first-child` — First child of parent */
+/* section :first-child{
+    background: red;
+} */
+
+/* - `:last-child` — Last child of parent */
+/* section :last-child{
+    background: aqua;
+} */
+
+/* 
+
+<section>
+    <h1>Thsi is child 1</h1>
+    <h1>Thsi is child 2</h1>
+    <h1>Thsi is child 3</h1>
+    <h1>Thsi is child 4</h1>
+    <h1>Thsi is child 5</h1>
+    <h1>Thsi is child 6</h1>
+    <h1>Thsi is child 7</h1>
+</section>
+
+*/
+
+/* - `:nth-child(n)` — nth child (e.g., `:nth-child(2)`, `:nth-child(2n + 1)`) */
+/* for single / general */
+/* section :nth-child(5){
+    background-color: lawngreen;
+} */
+
+/* condition based
+    2n, n = 0 => 2 * 0 = 0
+    2n, n = 1 => 2 * 1 = 2
+    2n, n = 2 => 2 * 2 = 4
+    ...
+    2n => 2 * n = 2n
+*/
+/* for even numbers */
+/* section :nth-child(2n){
+    background-color: rgb(23, 51, 154);
+    color: aliceblue;
+} */
+
+/* for odd numbers */
+/* section :nth-child(2n + 1){
+    background-color: rgb(154, 23, 23);
+    color: aliceblue;
+    text-align: center;
+} */
+
+/* - `:not(selector)` — Elements not matching selector */
+/* for single one */
+/* .c3 :not(h1){
+    background-color: aqua;
+    color: black;
+} */
+
+/* for multiple */
+.c3 :not(h1, h2,h3){
+    background-color: rgb(0, 26, 255);
+    color: rgb(249, 247, 247);
+}
+
+/* 
+
+### 🔹 **UI Element States (CSS3)**
+
+*/
+
+/* - `:valid`, `:invalid` — Form validation states */
+
+/* 
+    valid --- green
+    invalid - red
+
+*/
+
+/* input:valid {
+    outline: 2px solid lawngreen;
+}
+
+input:invalid {
+    outline: 2px solid rgb(252, 0, 0);
+} */
+
+
+/* - `:in-range`, `:out-of-range` — Input range validation */
+input[type="number"]:in-range{
+    border : 5px solid lawngreen;
+}
+
+input:out-of-range{
+    border : 5px solid rgb(252, 27, 27);
+}
+
+
+/* - `:read-only`, `:read-write` — Input field states */
+/* input:read-only{
+    background-color: rgb(208, 206, 206);
+}
+
+input:read-write{
+    background-color: rgb(3, 248, 11);
+} */
+
+/* `:required`, `:optional` */
+/* input:required{
+    background-color: rgb(244, 4, 4);
+}
+
+input:optional{
+    background-color: rgb(4, 244, 32);
+} */
+
+/* - `:disabled`, `:enabled`, 
+ */
+/* input:disabled{
+    background-color: rgb(244, 4, 4);
+}
+
+input:enabled{
+    background-color: rgb(4, 244, 32);
+} */
+
+/* - `:checked` */
+/* input[type="radio"]:checked + label{
+    color: rgb(244, 4, 20);
+    font-size: 55px;
+} */

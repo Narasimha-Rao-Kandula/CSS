@@ -1,0 +1,20 @@
+/* External CSS for CSS Basics Tutorial */
+
+.external-demo {
+    border: 2px solid #007bff;
+}
+
+.highlight-box {
+    background-color: #e9ecef;
+    border-left: 4px solid #007bff;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.external-demo h2 {
+    color: #007bff;
+}
+
+.external-demo p {
+    color: #495057;
+}

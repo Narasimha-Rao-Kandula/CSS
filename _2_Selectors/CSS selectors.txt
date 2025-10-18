@@ -1,0 +1,75 @@
+CSS selectors are patterns used to select and style HTML elements.
+
+Syntax :
+
+selector {
+    property: value;
+}
+---
+
+### 🔹 **Basic Selectors**
+- `*` — Universal selector (selects all elements)
+- `element` — Type selector (e.g., `div`, `p`, `h1`)
+- `#id` — ID selector (e.g., `#header`)
+- `.class` — Class selector (e.g., `.menu`)
+- `[attribute]` — Attribute selector (e.g., `[type="text"]`)
+
+---
+
+### 🔹 **Combinator Selectors**
+- `A B` — Descendant selector (selects `B` inside `A`)
+- `A > B` — Child selector (selects direct children `B` of `A`)
+- `A + B` — Adjacent sibling selector (selects `B` immediately after `A`)
+- `A ~ B` — General sibling selector (selects all `B` siblings after `A`)
+
+---
+
+### 🔹 **Group Selector**
+- `A, B` — Groups multiple selectors (e.g., `h1, h2, h3`)
+
+---
+
+### 🔹 **Attribute Selectors**
+- `[attr]` — Elements with the attribute
+- `[attr="value"]` — Exact match
+- `[attr~="value"]` — Attribute contains word
+- `[attr^="value"]` — Attribute starts with value
+- `[attr$="value"]` — Attribute ends with value
+- `[attr*="value"]` — Attribute contains substring
+
+---
+
+### 🔹 **Pseudo-classes**
+- `:hover` — When mouse hovers
+- `:active` — When element is active
+- `:focus` — When element is focused
+- `:visited` — Visited links
+- `:first-child` — First child of parent
+- `:last-child` — Last child of parent
+- `:nth-child(n)` — nth child (e.g., `:nth-child(2)`)
+- `:nth-of-type(n)` — nth of its type
+
+---
+
+### 🔹 **Pseudo-elements**
+- `::before` — Insert content before element
+- `::after` — Insert content after element
+- `::first-letter` — Style first letter
+- `::first-line` — Style first line
+- `::selection` — Style selected text
+- `::placeholder` — Style placeholder text
+
+---
+
+### 🔹 **UI Element States (CSS3)**
+- `:valid`, `:invalid` — Form validation states
+- `:in-range`, `:out-of-range` — Input range validation
+- `:read-only`, `:read-write` — Input field states
+
+---
+
+### 🔹 **Logical Combinations (CSS4+)**
+- `:is()` — Matches any of the selectors inside
+- `:where()` — Like `:is()` but with no specificity
+- `:has()` — Selects elements that contain a certain child (limited browser support)
+
