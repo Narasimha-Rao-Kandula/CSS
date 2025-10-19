@@ -1,75 +1,81 @@
 CSS selectors are patterns used to select and style HTML elements.
 
-Syntax :
-
+Syntax:
 selector {
     property: value;
 }
----
 
-### 🔹 **Basic Selectors**
-- `*` — Universal selector (selects all elements)
-- `element` — Type selector (e.g., `div`, `p`, `h1`)
-- `#id` — ID selector (e.g., `#header`)
-- `.class` — Class selector (e.g., `.menu`)
-- `[attribute]` — Attribute selector (e.g., `[type="text"]`)
 
----
+Basic Selectors:
 
-### 🔹 **Combinator Selectors**
-- `A B` — Descendant selector (selects `B` inside `A`)
-- `A > B` — Child selector (selects direct children `B` of `A`)
-- `A + B` — Adjacent sibling selector (selects `B` immediately after `A`)
-- `A ~ B` — General sibling selector (selects all `B` siblings after `A`)
+* `*` — Universal selector (selects all elements)
+* `element` — Type selector (for example, `div`, `p`, `h1`)
+* `#id` — ID selector (for example, `#header`)
+* `.class` — Class selector (for example, `.menu`)
+* `[attribute]` — Attribute selector (for example, `[type="text"]`)
 
 ---
 
-### 🔹 **Group Selector**
-- `A, B` — Groups multiple selectors (e.g., `h1, h2, h3`)
+**Combinator Selectors**
+
+* `A B` — Descendant selector (selects element `B` inside element `A`)
+* `A > B` — Child selector (selects direct child `B` of `A`)
+* `A + B` — Adjacent sibling selector (selects `B` immediately after `A`)
+* `A ~ B` — General sibling selector (selects all `B` siblings after `A`)
 
 ---
 
-### 🔹 **Attribute Selectors**
-- `[attr]` — Elements with the attribute
-- `[attr="value"]` — Exact match
-- `[attr~="value"]` — Attribute contains word
-- `[attr^="value"]` — Attribute starts with value
-- `[attr$="value"]` — Attribute ends with value
-- `[attr*="value"]` — Attribute contains substring
+**Group Selector**
+
+* `A, B` — Groups multiple selectors together (for example, `h1, h2, h3`)
 
 ---
 
-### 🔹 **Pseudo-classes**
-- `:hover` — When mouse hovers
-- `:active` — When element is active
-- `:focus` — When element is focused
-- `:visited` — Visited links
-- `:first-child` — First child of parent
-- `:last-child` — Last child of parent
-- `:nth-child(n)` — nth child (e.g., `:nth-child(2)`)
-- `:nth-of-type(n)` — nth of its type
+**Attribute Selectors**
+
+* `[attr]` — Selects elements with the given attribute
+* `[attr="value"]` — Selects elements with an exact attribute value
+* `[attr~="value"]` — Selects elements whose attribute contains the word
+* `[attr^="value"]` — Selects elements whose attribute starts with a specific value
+* `[attr$="value"]` — Selects elements whose attribute ends with a specific value
+* `[attr*="value"]` — Selects elements whose attribute contains a specific substring
 
 ---
 
-### 🔹 **Pseudo-elements**
-- `::before` — Insert content before element
-- `::after` — Insert content after element
-- `::first-letter` — Style first letter
-- `::first-line` — Style first line
-- `::selection` — Style selected text
-- `::placeholder` — Style placeholder text
+**Pseudo-classes**
+
+* `:hover` — When the mouse pointer is over the element
+* `:active` — When the element is being activated or clicked
+* `:focus` — When the element is focused
+* `:visited` — For visited links
+* `:first-child` — Selects the first child of a parent
+* `:last-child` — Selects the last child of a parent
+* `:nth-child(n)` — Selects the nth child (for example, `:nth-child(2)`)
+* `:nth-of-type(n)` — Selects the nth element of its type
 
 ---
 
-### 🔹 **UI Element States (CSS3)**
-- `:valid`, `:invalid` — Form validation states
-- `:in-range`, `:out-of-range` — Input range validation
-- `:read-only`, `:read-write` — Input field states
+**Pseudo-elements**
+
+* `::before` — Inserts content before an element
+* `::after` — Inserts content after an element
+* `::first-letter` — Styles the first letter of an element
+* `::first-line` — Styles the first line of text
+* `::selection` — Styles the portion of text selected by the user
+* `::placeholder` — Styles the placeholder text inside input fields
 
 ---
 
-### 🔹 **Logical Combinations (CSS4+)**
-- `:is()` — Matches any of the selectors inside
-- `:where()` — Like `:is()` but with no specificity
-- `:has()` — Selects elements that contain a certain child (limited browser support)
+**UI Element States (CSS3)**
 
+* `:valid` and `:invalid` — Represent form validation states
+* `:in-range` and `:out-of-range` — Represent input range validation states
+* `:read-only` and `:read-write` — Represent input field states
+
+---
+
+**Logical Combinations (CSS4+)**
+
+* `:is()` — Matches any of the selectors inside the parentheses
+* `:where()` — Works like `:is()` but does not add specificity
+* `:has()` — Selects elements that contain a specific child (limited browser support)
