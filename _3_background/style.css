@@ -54,5 +54,53 @@ h1{
     color: transparent;
     background-clip: text;
     /* -webkit-background-clip: text; */
+
+
 }
 
+
+.gradients{
+    width: 400px;
+    height: 200px;
+    border: 4px solid rgb(153, 255, 0);
+
+    /* gradients */
+
+    /* linear-gradient */
+
+    /* background: linear-gradient(orange, white, lawngreen); */
+
+    /* background: linear-gradient(to left, rgb(0, 208, 255), rgb(238, 2, 254), rgb(252, 0, 4)); */
+
+    /* background: linear-gradient(to left bottom, rgb(0, 208, 255), rgb(238, 2, 254), rgb(252, 0, 4)); */
+
+    /* background: linear-gradient(to left bottom, rgb(0, 208, 255) 5%, rgb(238, 2, 254) 90%, rgb(252, 0, 4)); */
+
+    /* background: repeating-linear-gradient(to top, rgb(0, 208, 255) 20px , rgb(238, 2, 254)); */
+
+
+    /* radial-gradient */
+    /* background: radial-gradient(lawngreen, white, orange) */
+    /* background: radial-gradient(45px 45px, lawngreen, white, orange) */
+    /* background: repeating-radial-gradient(45px 45px, lawngreen, white, orange) */
+
+    /* conic-gradient */
+    /* background: conic-gradient(aqua, rgb(234, 0, 255),red,lawngreen,blue,aqua); */
+    /* background: conic-gradient(aqua 10%, rgb(234, 0, 255) 20%,red 0%,lawngreen 25%,blue,aqua); */
+
+
+    /* background-blend-mode */
+    background: radial-gradient(aqua, pink, white), url("./lion-king-pictures-.webp") ;
+    background-blend-mode: overlay;
+    background-blend-mode: lighten;
+    background-blend-mode: multiply;
+    background-blend-mode: darken;
+    background-blend-mode: difference;
+    background-blend-mode: exclusion;
+    background-blend-mode: normal;
+    background-blend-mode: hue;
+    background-blend-mode: screen;
+    background-blend-mode: color-dodge;
+    background-blend-mode: color-burn;
+
+}
