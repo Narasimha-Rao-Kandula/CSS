@@ -90,8 +90,9 @@ h1{
 
 
     /* background-blend-mode */
-    background: radial-gradient(aqua, pink, white), url("./lion-king-pictures-.webp") ;
-    background-blend-mode: overlay;
+    /* background: conic-gradient(aqua, pink, white,aqua) ; */
+    /* background: radial-gradient(aqua, pink, white), url("./lion-king-pictures-.webp") ; */
+    /* background-blend-mode: overlay;
     background-blend-mode: lighten;
     background-blend-mode: multiply;
     background-blend-mode: darken;
@@ -101,6 +102,6 @@ h1{
     background-blend-mode: hue;
     background-blend-mode: screen;
     background-blend-mode: color-dodge;
-    background-blend-mode: color-burn;
+    background-blend-mode: color-burn; */
 
 }

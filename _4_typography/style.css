@@ -1,0 +1,102 @@
+/* external font-family importing */
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bitcount+Grid+Single:wght@100..900&display=swap');
+
+
+/* *{
+    background-color: aqua;
+} */
+
+/* typograpgy */
+
+body{
+    /* root  -- 1rem == 16px */
+    font-size: 16px;
+}
+
+body > h1{
+    /* 1. font-family */
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: cursive, Arial, Helvetica, sans-serif; */
+
+    /* external font family */
+    /* font-family: "Bitcount Grid Single", system-ui;
+    font-family: "BBH Sans Bartle", sans-serif; */
+
+
+    /* font-size */
+    /* font-size: xx-small;
+    font-size: 16px;
+    font-size: 1000%; */
+    /* rem - relative to the root element */
+    font-size: 2rem;
+
+    /* font-style */
+    /* font-style: italic; */
+    font-style: oblique;
+    font-style: normal;
+
+    /* font-variant */
+    font-variant: small-caps;
+    /* font-variant: pretite-caps;
+    font-variant: unicase;
+    font-variant: titling-caps; */
+
+    /* writing-mode */
+    writing-mode:horizontal-tb;
+    writing-mode: vertical-lr;
+    writing-mode: vertical-rl;
+    writing-mode: sideways-lr;
+    writing-mode: sideways-rl;
+
+}
+
+div, .normail{
+    font-size: 20px;
+}
+
+
+div > h1{
+    font-size: 2rem;
+}
+
+div > .em{
+    font-size: 2rem;
+}
+
+p{
+    
+    /* font-weight -- 100 - 900 */
+    font-weight: 100;
+    /* font-weight: 900;
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: bolder; */
+
+    /* letter-spacing */
+    letter-spacing: -2px;
+    letter-spacing: 1px;
+
+    /* word-spacing */
+    word-spacing: 10px;
+
+}
+
+#wrap{
+    width: 300px;
+    height: 200px;
+    border: 2px solid;
+
+    /* word-break */
+    word-break: break-all;
+    word-break: keep-all;
+
+    /* word-wrap */
+    word-wrap: break-word;
+    word-wrap: normal;
+
+}
