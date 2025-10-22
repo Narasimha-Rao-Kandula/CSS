@@ -100,3 +100,73 @@ p{
     word-wrap: normal;
 
 }
+
+.text{
+    /* text styles */
+    /* text-align */
+    text-align:left ;
+    /* text-align: right; */
+    text-align: center;
+    /* text-align: start;
+    text-align: end; */
+
+    /* text-decoration-line */
+    text-decoration-line: underline;
+    /* text-decoration-line: overline; */
+    /* text-decoration-line: line-through; */
+    
+    /* text-decoration-style */
+    /* text-decoration-style:dotted;
+    text-decoration-style: dashed;
+    text-decoration-style: double;
+    text-decoration-style: wavy; */
+
+    /* text-decoration-color */
+    text-decoration-color: aqua;
+    text-decoration-color: rgb(0,255,13);
+    text-decoration-color: black;
+
+    /* text-decoration-thickness */
+    /* text-decoration-thickness: 20px; */
+
+    /* text-transform */
+    /* text-transform:lowercase ;
+    text-transform:uppercase;
+    text-transform:capitalize;
+    text-transform: none; */
+
+    /* text-shadow : x-axis y-axis blur color */
+    letter-spacing: 5px;
+    text-shadow: 2.0px 2.0px 1.0px rgb(100, 255, 227);
+    text-shadow: 0.6px .6px .2px rgb(0,0,0);
+
+    /* text-indent */
+    text-align: start;
+    /* text-indent: 20px; */
+
+    /* text-size-adjust */
+    text-size-adjust: 25% ;
+
+}
+
+#para1{
+    width: 200px;
+    height: 200px;
+    border: 5px solid rgb(254, 5, 5);
+    text-align: justify;
+
+    /* text-overflow */
+    text-overflow: clip;
+    text-overflow: ellipsis; 
+
+    /* text-wrap */
+    text-wrap: wrap;
+    /* text-wrap: nowrap; */
+
+    /* text-align-last */
+    text-align-last: center ;
+    text-align-last: justify;
+    text-align-last: end;
+    text-align-last: left;
+
+}
