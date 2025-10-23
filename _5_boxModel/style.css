@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-color: aqua;
+}
+
+/* Box Model */
+/* 
+content  --- some text
+
+padding  --- space between the content and border
+
+border   --- it seperate or align between the margin and padding
+
+margin  --- space outside the border
+
+
+*/
+
+/* top right bottom left */
+/*  */
+
+#box{
+    /* padding */
+    /* padding: 25px; 4 sides */
+    /* padding: 10px 40px; top/bottom  left/right */
+    /* padding: 10px 20px 30px;top left/right bottom */
+
+    /* padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 75px;
+    padding-bottom: 100px; */
+
+
+    /* 
+    inline  -- left(start)  &  right(end)
+    */
+
+    /* padding-inline: 75px; left and right
+    padding-inline-start: 25px; left
+    padding-inline-end: 0px; right */
+
+    /* block   -- top(start)   &  bottom(end) */
+    /* padding-block: 100px;
+    padding-block-start: 25px;
+    padding-block-end: 0px; */
+
+
+    /* border properties */
+    
+    /* border-width */
+    border-width: 5px;
+
+    /* border-style */
+    border-style: solid;
+    border-style: dashed;
+    border-style: dotted;
+    border-style: double;
+    /* border-style: groove; */
+    /* border-style: ridge; */
+    /* border-style: hidden; */
+
+    /* border-color */
+    border-color: aqua;
+    border-color: rgb(13,255,4);
+
+
+    /* border: width  style  color */
+    border: 5px solid rgb(2, 251, 14);
+
+    border-top: 5px dashed black;
+    border-bottom: 5px solid rgb(255, 1, 1);
+    border-left: 5px double rgb(5, 162, 247);
+    border-right: 5px dotted rgb(219, 5, 247);
+
+    /* border-radius */
+    border: 5px solid rgb(0, 68, 255);
+    padding: 5px;
+    border-radius: 5px ;
+    border-radius: 0px ;
+
+
+    /* 
+    top & left --- start
+    bottom & right --- end
+
+        ----    top right bottom left   ---
+    */
+
+    /* 1. top-left --- start-start */
+    border-start-start-radius: 25px;
+
+    /* 2. top-right --- start-end */
+    border-start-end-radius: 0px;
+
+    /* 3. bottom-right --- end-end */
+    border-end-end-radius: 75px;
+
+    /* 4. bottom-left  --- end-start */
+    border-end-start-radius: 100px;
+
+
+    /* task : good look shape */
+    border-start-end-radius: 0px;
+    border-start-start-radius: 25px;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 25px;
+
+
+
+    /* task : only left */
+    /* border-block: none;
+    border-inline-end: none; */
+
+    /* margin properties */
+    background-color: rgb(2, 251, 14);
+    margin: 25px;
+    /* all the same properties of padding what we have discussed at the beginnig */
+
+    margin-top: 0px;
+
+    margin-inline:50px;
+
+    margin-block: 100px;
+
+}
