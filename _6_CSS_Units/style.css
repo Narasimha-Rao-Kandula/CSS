@@ -1,0 +1,86 @@
+
+html{
+    /* root font size */
+    font-size: 12px;
+}
+
+/* body{
+    default font size -- 16px
+    font-size: 16px;
+} */
+
+ul{
+    font-size: 16px;
+}
+
+ul>li:first-child{
+    font-size: 1rem;
+    font-size: 3rem;
+
+}
+
+ul > li:last-child{
+    font-size: 1em;
+    font-size: 3em;
+}
+
+
+.parent{
+    /* width: 100%;
+    height: 200px; */
+
+    /* 
+        vw -- viewport width
+        vh -- viewport height
+    
+    */
+    width: 100vw;
+    height: 100vh;
+
+    background-color: aqua;
+}
+
+.child1{
+    /* width: 200px;
+    height: 100px; */
+
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(3, 11, 0);
+}
+
+
+.child2{
+    /* width: 50%;
+    height: 100px; */
+    background-color: rgb(255, 46, 46);
+}
+/* 
+.fontsize > h1{
+    
+    
+    mm -- milli meter   ==> 10mm = 1cm
+    cm -- cente meter   ==> 10cm = 1dm
+    px -- pixels        ==> default 16px, 1px = 1dot
+    in -- inches    ==> 1in = 96px
+    
+   
+
+    font-size: 1px;
+    font-size: 16px;
+
+    font-size: 4.25mm;
+    font-size: 0.425cm ;
+
+    font-size: 1in;
+
+} */
+
+/* .fontsize1{
+    font-size: 1in;
+}
+
+.fontsize2{
+    font-size: 97px;
+} */
+
