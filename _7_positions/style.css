@@ -1,0 +1,101 @@
+.Positions{
+    width: 500px;
+    height: 500px;
+    /* background-color: red; */
+    border: 2px solid black;
+}
+/* 
+
+margin-top  --> top
+margin-bottom --> bottom
+margin-left --> left
+margin-right --> right
+
+
+*/
+.static{
+    border: 2px solid red;
+
+    position: static;
+}
+
+.relative{
+    border: 2px solid #0ff;
+
+    position: relative;
+    top: 200px;
+
+}
+
+.absolute{
+    border: 2px solid #f0f;
+    background-color: #f0f;
+
+    position: absolute;
+    top: 0;
+}
+
+
+.Positions{
+    background-color: aliceblue;
+    height: 1000px;
+}
+
+.grandparent{
+    width: 250px;
+    height: 250px;
+    /* border: 5px solid red; */
+    background: #0ff;
+    margin: 10px;
+    padding: 15px;
+}
+
+.parent{
+    width: 200px;
+    height: 200px;
+    /* border:5px solid rgb(255, 0, 0); */
+    background: #f0f;
+    padding: 20px;
+
+    /* position: absolute;
+    top: 0; */
+
+    position: relative;
+
+}
+
+.child{
+    width: 150px;
+    height: 150px;
+    background: #0f0;
+
+    /* position: relative;
+    bottom: 10px;
+    left: 90px; */
+
+    /* position: absolute;
+    top: 0px; */
+
+    /* position: fixed;
+    top: 250px; */
+
+    position: sticky;
+    top: 0px;
+
+}
+
+.Sticky{
+    text-align: center;
+    position: relative;
+    top: 250px;
+
+    position: fixed;
+    /* Top Right Bottom Left */
+    left: 98px;
+
+    position: sticky;
+    top: 25px;
+
+    
+}
+
