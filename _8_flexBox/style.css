@@ -1,0 +1,83 @@
+body{
+    background-color: aliceblue;
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid;
+}
+
+#flexbox{
+    width: 600px;
+    height: 600px;
+    font-size: 25px;
+    border: 2px solid rgba(250, 19, 19, 0.874);
+
+    display: flex;
+    /* 
+    
+    x-axis  --- main axis   --- Justify
+    y-axis  --- cross axis  --- align
+
+    */
+
+    /* justify-content: flex-start; default  -- start */
+    /* justify-content: flex-end; end  */
+    /* justify-content: center; */
+    
+    /* align-items: flex-start; /* default  -- start*/
+    /* align-items: end; */
+    /* align-items: center; */ 
+
+    /* gap: 20px; */
+
+    /* row-gap: 40px;
+    column-gap: 50px; */
+
+    /* direction */
+    flex-direction: row; /* default */
+    /* flex-direction: row-reverse;
+    flex-direction: column-reverse;
+    flex-direction: column; */
+
+    /* align-content: flex-start; default  -- start */
+    /* align-content: flex-end; end  */
+    /* align-content: center; */
+    
+    /* justify-items: flex-start; /* default  -- start*/
+    /* justify-items: end; */
+    /* justify-items: center; */ 
+
+    /* flex-direction: row; */
+    /* flex-wrap: nowrap; default */
+
+}
+
+/* #box2{
+    flex-grow: 1;   
+    flex-grow: 0; default
+
+    flex-shrink: 1;
+    flex-shrink: 0;
+
+    flex-basis: 200px;
+
+} */
+
+#box3{
+    display: flex;
+    align-self: center;
+    
+}
+
+#box5{
+    display: flex;
+    justify-self: center;
+}
